@@ -24,7 +24,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `stand-for-sonic`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#ec4166`,
