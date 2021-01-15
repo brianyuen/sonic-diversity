@@ -1,0 +1,15 @@
+@mixin twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2em 2em;
+  .first-col {
+    grid-area: 1 / 1 / 2 / 3;
+    h1 {
+      color: red;
+    }
+  }
+  .second-col {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+}

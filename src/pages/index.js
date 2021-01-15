@@ -3,22 +3,23 @@ import { Link } from 'gatsby'
 import { Helmet } from "react-helmet"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+import home from '../scss/home.module.scss'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Stand for Sonic Diversity" />
     <Helmet bodyAttributes={{class: 'home'}} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className={home.wrapper}>
+      <section className={home.firstCol}>
+        <h1>LOGO</h1>
+      </section>
+      <section className={home.secondCol}>
+        intro
+        <Link to="/page-2/">Go to page 2</Link>
+      </section>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/page-3/">Go to page 3</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 

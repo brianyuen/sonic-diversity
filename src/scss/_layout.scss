@@ -1,6 +1,11 @@
-html {
-  padding: 20px;
-  p {
-    color: $lightaccent;
-  }
+html,
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  max-width: $xlarge;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
 }

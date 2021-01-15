@@ -4,9 +4,6 @@ import PropTypes from "prop-types"
 
 // import Header from "./header"
 
-import layout from '../scss/layout.module.scss'
-
-
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
@@ -20,7 +17,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className={layout.wrapper}>
+      <div className="wrapper">
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
         <main>{children}</main>
       </div>
