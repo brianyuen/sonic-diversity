@@ -4,16 +4,8 @@
   @include twoCol;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
-  #firstCol {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-  #secondCol {
-    grid-area: 1 / 2 / 2 / 3;
-  }
   .first-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    grid-area: 1 / 1 / 2 / 2;
     // adjusts width of logo
     padding: 0px 1rem;
     // weird hack to prevent image from dissappearing when using display:flex when combined with GatsbyImageSharpFluid
@@ -23,7 +15,7 @@
     }
   }
   .second-col {
-    margin: 0;
+    grid-area: 1 / 2 / 2 / 3;
   }
 }
 

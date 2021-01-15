@@ -13,3 +13,9 @@ body {
 section {
   border: 1px solid red;
 }
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
