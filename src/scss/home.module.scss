@@ -2,4 +2,29 @@
 
 .wrapper {
   @include twoCol;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  #firstCol {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  #secondCol {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .first-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // weird hack to prevent image from dissappearing when using display:flex when combined with GatsbyImageSharpFluid
+    // https://stackoverflow.com/questions/56928410/image-disappears-when-container-becomes-flex-container-gatsby
+    & > * {
+      flex-grow: 1;
+    }
+  }
+  .second-col {
+    margin: 0;
+  }
+}
+
+.logo {
+  margin: 0;
 }

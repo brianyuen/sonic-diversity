@@ -6,6 +6,10 @@ body {
 .wrapper {
   max-width: $xlarge;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0 1rem;
   overflow: hidden;
+}
+
+section {
+  border: 1px solid red;
 }
