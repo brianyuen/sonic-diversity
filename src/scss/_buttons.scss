@@ -1,0 +1,26 @@
+.cta {
+  margin: 0;
+  padding: 0;
+  &.stack {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    li {
+      margin: 1rem 0px;
+    }
+  }
+}
+
+.button {
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  &.primary {
+    background-color: $accent;
+    outline: 2px solid $accent;
+  }
+  &.secondary {
+    background-color: transparent;
+    outline: 2px solid $accent;
+  }
+}

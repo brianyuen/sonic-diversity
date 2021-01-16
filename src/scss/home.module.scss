@@ -4,8 +4,9 @@
   @include twoCol;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  grid-template-areas: 'firstCol secondCol';
   .first-col {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: firstCol;
     // adjusts width of logo
     padding: 0px 1rem;
     // weird hack to prevent image from dissappearing when using display:flex when combined with GatsbyImageSharpFluid
@@ -15,10 +16,52 @@
     }
   }
   .second-col {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: secondCol;
+    display: flex;
   }
+}
+
+.wrapper-lower {
+  @include twoCol;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.6fr 0.4fr;
+  height: 100vh;
+  grid-template-areas:
+    "footerFirstCol footerSecondCol"
+    "footer footer";
+  .first-col {
+    grid-area: footerFirstCol;
+    padding: 0px 1rem;
+    flex-direction: column;
+    align-items: flex-start
+  }
+  .second-col {
+    grid-area: footerSecondCol;
+  }
+  .footer { grid-area: footer; }
 }
 
 .logo {
   margin: 0;
+}
+
+.stand {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0px;
+  ul {
+    padding: 0;
+    display: flex;
+    li {
+      list-style-type: none;
+      margin: 0px 1rem;
+    }
+  }
+}
+
+.second-col-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
