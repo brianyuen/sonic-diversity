@@ -1,0 +1,17 @@
+.wrapper {
+  padding: 0px 10rem;
+}
+
+.key-value {
+  display: grid;
+  grid-template-columns: 33% auto;
+  dt {
+    grid-column: 1;
+  }
+  dd {
+    grid-column: 2;
+  }
+}
+.footer {
+  text-align: center;
+}
