@@ -91,7 +91,7 @@ const IndexPage = (props) => (
       </section>
 
       <footer className={home.footer}>
-        <Footer />
+        <Footer siteTitle={props.data.site.siteMetadata.title} />
       </footer>
 
 

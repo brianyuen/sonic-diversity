@@ -64,7 +64,7 @@ const SinglePage = (props) => (
 
       </dl>
 
-      <Footer />
+      <Footer siteTitle={props.data.site.siteMetadata.title} />
 
     </div>
   </Layout>
