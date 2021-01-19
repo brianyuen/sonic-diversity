@@ -12,13 +12,6 @@ import Footer from "../components/footer"
 
 export const data = graphql`
   query {
-    srlogo: file(relativePath: { eq: "lgo-stand.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     site {
       siteMetadata {
         title

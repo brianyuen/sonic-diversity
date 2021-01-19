@@ -1,29 +1,44 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { StaticQuery, Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import footer from '../scss/footer.module.scss'
-import Image from './../components/image'
+
+export default function Footer() {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          standlogo: file(relativePath: { eq: "lgo-stand.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          site {
+            siteMetadata {
+              title
+              description
+              author
+            }
+          }
+        }
+      `}
+      render={data => (
 
 
-const Footer = ( { siteTitle } ) => (
-  <footer className={footer.footer}>
-    <h3>Black Voices Matter.</h3>
-    <Link to="/" className={footer.logo} title={siteTitle} >
-      <Image alt={siteTitle} filename="lgo-stand.png" />
-    </Link>
-    <h4>An initiative launched by</h4>
-  </footer>
-)
+        <footer className={footer.footer}>
+          <h3>Black Voices Matter.</h3>
+          <Link to="/" className={footer.logoLink} >
+            <Img fluid={data.standlogo.childImageSharp.fluid} className={footer.logo} alt={data.site.siteMetadata.title}  />
+          </Link>
+          <h4>An initiative launched by</h4>
+        </footer>
 
-
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
+      )}
+    />
+  )
 }
 
-Footer.defaultProps = {
-  siteTitle: ``,
-}
 
-
-export default Footer

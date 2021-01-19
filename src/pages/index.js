@@ -11,22 +11,22 @@ import home from '../scss/home.module.scss'
 import Footer from "../components/footer"
 
 export const data = graphql`
-  query {
-    srlogo: file(relativePath: { eq: "lgo-stand.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 960) {
-          ...GatsbyImageSharpFluid
+    query {
+      srlogo: file(relativePath: { eq: "lgo-stand.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 960) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          title
+          description
+          author
         }
       }
     }
-    site {
-      siteMetadata {
-        title
-        description
-        author
-      }
-    }
-  }
 `
 const IndexPage = (props) => (
   <Layout>
@@ -91,7 +91,7 @@ const IndexPage = (props) => (
       </section>
 
       <footer className={home.footer}>
-        <Footer siteTitle={props.data.site.siteMetadata.title} />
+        <Footer />
       </footer>
 
 
