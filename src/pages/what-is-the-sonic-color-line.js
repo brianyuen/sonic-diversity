@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { Helmet } from "react-helmet"
 // import Img from 'gatsby-image'
 
@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 
 import single from '../scss/single.module.scss'
 
+import Header from "../components/header"
 import Footer from "../components/footer"
 
 export const data = graphql`
@@ -27,16 +28,10 @@ const SinglePage = (props) => (
     <Helmet bodyAttributes={{class: 'single'}}  />
 
     <div className={single.wrapper}>
+      <Header />
 
-      <header>
-        <nav className={single.nav}>
-          <ul>
-            <li>Logo</li>
-            <li><Link to="/" title={props.data.site.siteMetadata.title} className="button secondary">Back</Link></li>
-          </ul>
-        </nav>
-        <h1>What is The Sonic Color Line</h1>
-      </header>
+      <h1>What is The Sonic Color Line</h1>
+
       <p>In her book, Binghamton University professor Jennifer Lynn Stoever coined “the Sonic Color Line” to describe the existence of a hierarchical division between the perceived “whiteness” and “blackness” of sounds, derived from listening practices exerted by a dominant culture. These listening practices perpetuate sonic stereotypes so effectively that, over time, we have been socialized to associate white voices as representative of the American identity.</p>
 
       <dl className={single.keyValue}>
@@ -57,7 +52,7 @@ const SinglePage = (props) => (
 
       </dl>
 
-      <Footer siteTitle={props.data.site.siteMetadata.title} />
+      <Footer />
 
     </div>
   </Layout>
