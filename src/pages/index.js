@@ -46,7 +46,7 @@ const IndexPage = (props) => (
             <p>Nunc feugiat platea augue fames etiam id elit ornare, pellentesque aliquet sociis morbi sit in libero pulvinar, condimentum proin vivamus urna ad suspendisse at. Tempus blandit nam magnis vel taciti venenatis lobortis ante, ornare est mattis pellentesque sem dictum bibendum eu</p>
 
             <ul className="cta stack">
-              <li><Link className="button primary" to="/page-2/">Start your stand</Link></li>
+              <li><Link className="button primary" to="/start-your-stand/">Start your stand</Link></li>
               <li><Link className="button secondary" to="/what-is-the-sonic-color-line/">What is the sonic color line</Link></li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ const IndexPage = (props) => (
       <section className={`centered ${home.firstCol}`}>
         <p>Eros himenaeos id porttitor magnis primis ridiculus purus amet accumsan eget mauris bibendum, netus nascetur sagittis felis ipsum sodales est consectetur laoreet nisl lacus. Pellentesque pulvinar primis quis purus tristique venenatis ultricies euismod facilisi, netus habitasse libero sociis a lacinia cursus vehicula dignissim, mollis nunc vitae potenti lacus convallis donec consectetur. Tortor condimentum sem penatibus vulputate massa ac congue orci facilisi, consequat purus quam parturient habitant maecenas pretium felis, conubia lectus aenean pellentesque sociosqu amet mattis donec.</p>
 
-        <p><Link className="button primary" to="/page-2/">Start your stand</Link></p>
+        <p><Link className="button primary" to="/start-your-stand/">Start your stand</Link></p>
       </section>
       <section className={home.secondCol}>
         <ol>
@@ -90,7 +90,7 @@ const IndexPage = (props) => (
         </ol>
       </section>
 
-      <footer className={home.footer}>
+      <footer className={`fade ${home.footer}`}>
         <Footer />
       </footer>
 
