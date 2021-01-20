@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import header from '../scss/header.module.scss'
 
-export default function Header() {
+export default function Header(props) {
   return (
     <StaticQuery
       query={graphql`
@@ -26,22 +26,26 @@ export default function Header() {
         }
       `}
       render={data => (
+        <header>
+          <nav className={header.nav}>
+            <ul>
+              <li className={header.logo}>
+                <Link to="/" className={header.logoLink} title={data.site.siteMetadata.title} >
+                  <Img fluid={data.standlogo.childImageSharp.fluid} className={header.logoImage} alt={data.site.siteMetadata.title}  />
+                </Link>
+              </li>
+              <li className={header.backButton}>
+                <Link to="/" title={data.site.siteMetadata.title} className="button secondary">
+                  Back
+                </Link>
+              </li>
+            </ul>
+          </nav>
 
-        <nav className={header.nav}>
-          <ul>
-            <li className={header.logo}>
-              <Link to="/" className={header.logoLink} title={data.site.siteMetadata.title} >
-                <Img fluid={data.standlogo.childImageSharp.fluid} className={header.logoImage} alt={data.site.siteMetadata.title}  />
-              </Link>
-            </li>
-            <li className={header.backButton}>
-              <Link to="/" title={data.site.siteMetadata.title} className="button secondary">
-                Back
-              </Link>
-            </li>
-          </ul>
-        </nav>
+          {/* if no headerText, don't show this */}
+          {props.headerText &&  <h1 className={header.h1}>{props.headerText}</h1>}
 
+        </header>
       )}
     />
   )

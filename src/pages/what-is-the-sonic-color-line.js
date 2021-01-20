@@ -22,15 +22,13 @@ export const data = graphql`
     }
   }
 `
-const SinglePage = (props) => (
+const SinglePage = () => (
   <Layout>
     <SEO title="What is The Sonic Color Line" />
     <Helmet bodyAttributes={{class: 'single'}}  />
 
     <div className={single.wrapper}>
-      <Header />
-
-      <h1>What is The Sonic Color Line</h1>
+      <Header headerText="What is The Sonic Color Line" />
 
       <p>In her book, Binghamton University professor Jennifer Lynn Stoever coined “the Sonic Color Line” to describe the existence of a hierarchical division between the perceived “whiteness” and “blackness” of sounds, derived from listening practices exerted by a dominant culture. These listening practices perpetuate sonic stereotypes so effectively that, over time, we have been socialized to associate white voices as representative of the American identity.</p>
 
