@@ -25,7 +25,7 @@ export const data = graphql`
 const SinglePage = () => (
   <Layout>
     <SEO title="What is The Sonic Color Line" />
-    <Helmet bodyAttributes={{class: 'single'}}  />
+    <Helmet bodyAttributes={{id: 'single'}}  />
 
     <div className={single.wrapper}>
       <Header headerText="What is The Sonic Color Line" />
