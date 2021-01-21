@@ -46,7 +46,7 @@ const IndexPage = (props) => (
             <p>Nunc feugiat platea augue fames etiam id elit ornare, pellentesque aliquet sociis morbi sit in libero pulvinar, condimentum proin vivamus urna ad suspendisse at. Tempus blandit nam magnis vel taciti venenatis lobortis ante, ornare est mattis pellentesque sem dictum bibendum eu</p>
 
             <ul className="cta stack">
-              <li><Link className="button primary" to="/start-your-stand/">Start your stand</Link></li>
+              <li><Link className="button primary" to="/start-your-stand/" state={{ modal: true }}>Start your stand</Link></li>
               <li><Link className="button secondary" to="/what-is-the-sonic-color-line/">What is the sonic color line</Link></li>
             </ul>
           </div>
