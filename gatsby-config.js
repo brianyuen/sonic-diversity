@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Stand for Sonic Diversity`,
     description: `An initiative launched by Studio Resonate`,
-    author: `@gatsbyjs`,
+    author: `@pandoramusic`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
