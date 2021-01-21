@@ -1,5 +1,11 @@
+@import 'mixins';
+@import 'keyframes';
+
 .wrapper {
   padding: 0px 10rem;
+  margin-top: -10px;
+  opacity: 0;
+  animation: fadein 0.5s ease 0.2s 1 normal forwards;
 }
 
 .key-value {
