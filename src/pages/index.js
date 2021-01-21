@@ -90,7 +90,7 @@ const IndexPage = (props) => (
         </ol>
       </section>
 
-      <footer className={`fade ${home.footer}`}>
+      <footer className={home.footer}>
         <Footer />
       </footer>
 

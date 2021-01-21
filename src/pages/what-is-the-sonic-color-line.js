@@ -50,7 +50,10 @@ const SinglePage = () => (
 
       </dl>
 
-      <Footer />
+
+      <footer className={single.footer}>
+        <Footer />
+      </footer>
 
     </div>
   </Layout>

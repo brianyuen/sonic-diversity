@@ -28,13 +28,13 @@ export default function Footer() {
       render={data => (
 
 
-        <footer className={footer.footer}>
+        <div className={footer.footer}>
           <h3>Black Voices Matter.</h3>
           <Link to="/" className={footer.logoLink} >
             <Img fluid={data.standlogo.childImageSharp.fluid} className={footer.logo} alt={data.site.siteMetadata.title}  />
           </Link>
           <h4>An initiative launched by</h4>
-        </footer>
+        </div>
 
       )}
     />
