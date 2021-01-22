@@ -1,3 +1,5 @@
+@import 'vars';
+
 @mixin twoCol {
   display: grid;
   grid-template-rows: 1fr;
@@ -6,4 +8,62 @@
 
 @mixin transition($duration) {
   transition:all $duration ease-in-out;
+}
+
+@mixin keyvalue($width) {
+  display: grid;
+  grid-template-columns: $width auto;
+  dd {
+    margin: 0 1rem;
+  }
+  dt {
+    grid-column: 1;
+    padding: 0 1rem;
+  }
+  dd {
+    grid-column: 2;
+  }
+  &:last-of-type {
+    border-bottom: 0px solid transparent !important;
+  }
+}
+
+@mixin fancybullets {
+  ul,ol {
+    padding: 0;
+  }
+  ol {
+    list-style: none;
+    counter-reset: numeric-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    li {
+      counter-increment: numeric-counter;
+      margin-bottom: 1rem;
+      position: relative;
+      padding: 0.4rem 0 0 1.6rem;
+      &::before {
+        content: counter(numeric-counter);
+        font-weight: bold;
+        font-size: 2rem;
+        // font-family: 'Abril Fatface', serif;
+        color: $primary;
+        line-height: 1;
+        position: absolute;
+        left: 0;
+        top: 0.4rem;
+      }
+    }
+  }
+  ul {
+    list-style-image: url('/img/bullet-arrow-primary.png');
+    padding-left: 1.2rem;
+    li {
+      list-style-type: none;
+      margin-bottom: 1rem;
+      padding: 0 0 0 0.6rem;
+    }
+  }
 }

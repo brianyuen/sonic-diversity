@@ -7,6 +7,9 @@
     list-style-type: none;
     li {
       margin: 1rem 0px;
+      &:first-child {
+        margin-right: 1.6rem;
+      }
     }
   }
 }
@@ -15,12 +18,15 @@
   padding: 0.8rem 1rem;
   margin: 1rem 0;
   cursor: pointer;
+  font-family: $fancyfont;
   &.primary {
-    background-color: $accent;
-    outline: 2px solid $accent;
+    background-color: $primary;
+    outline: 2px solid $primary;
+    color: $white;
   }
   &.secondary {
     background-color: transparent;
-    outline: 2px solid $accent;
+    outline: 2px solid $primary;
+    color: $white;
   }
 }

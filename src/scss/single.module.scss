@@ -9,15 +9,9 @@
 }
 
 .key-value {
-  display: grid;
-  grid-template-columns: 33% auto;
-  dt {
-    grid-column: 1;
-  }
-  dd {
-    grid-column: 2;
-  }
+  @include keyvalue(33%)
 }
+
 .footer {
   text-align: center;
 }

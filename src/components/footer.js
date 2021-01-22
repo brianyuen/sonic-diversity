@@ -34,6 +34,17 @@ export default function Footer() {
             <Img fluid={data.standlogo.childImageSharp.fluid} className={footer.logo} alt={data.site.siteMetadata.title}  />
           </Link>
           <h4>An initiative launched by</h4>
+
+
+          {/* <div className={footer.signatories}>
+            <p>Signatories</p>
+            <ul>
+              <li>pandora</li>
+              <li>siriusxm</li>
+              <li>sticher</li>
+            </ul>
+          </div> */}
+
         </div>
 
       )}

@@ -1,0 +1,15 @@
+@import 'vars';
+
+body {
+  background-color: $bgcolor
+}
+
+h1,h2,h3,h4,h5,p,li {
+  color: $white;
+}
+
+#home {
+  dt {
+    color: $white;
+  }
+}

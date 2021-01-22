@@ -1,19 +1,18 @@
+// TYPE
 $fancyfont: "Alfa Slab One", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$bodyfont: "Sanchez", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$bodyfont: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$lineheight: 160%;
+$lineheightheader: 140%;
 
-$bodycolor: #262626;
-$bgcolor: #343842;
-$light: #8fabbf;
-$blue: #425f73;
-$accent: #de4723;
-$lightaccent: #D47900;
-$darkgrey: #232323;
-$teal: #23BADE;
-$green: #23dea6;
+// COLORS
+$bodycolor: white;
+$bgcolor: #161619;
+$primary: #ec4166;
+$secondary: #23d1ba;
 $white: #fff;
+$black: #000;
 
-$lineheight: 140%;
-
+// VIEWPORT SIZE
 $xlarge: 1280px;
 $large: 960px;
 $medium: 720px;

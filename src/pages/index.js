@@ -41,26 +41,21 @@ const IndexPage = (props) => (
         <div className={home.secondColWrapper}>
           <div className={home.upper}>
             <h1>Lines have been drawn that perpetuate racism in every industry.</h1>
-            <p>Scelerisque ligula lorem convallis placerat pharetra fringilla curae vitae ullamcorper augue inceptos elit vehicula est, aenean aliquam sociis quisque tristique sed imperdiet sapien tempus suspendisse pretium erat. Id venenatis litora fermentum lorem diam dolor lacus quis</p>
+            <h2>Some of these lines can be seen. Others can be heard.</h2>
 
-            <p>Nunc feugiat platea augue fames etiam id elit ornare, pellentesque aliquet sociis morbi sit in libero pulvinar, condimentum proin vivamus urna ad suspendisse at. Tempus blandit nam magnis vel taciti venenatis lobortis ante, ornare est mattis pellentesque sem dictum bibendum eu</p>
+            <p>These are sonic color lines - invisible but pervasive barriers that reward white voices and stereotype voices of color.</p>
+
+            <p>Today, we’re taking a stand for sonic diversity. Will you stand with us as we work to open our ears, and the ears of everyone around us, to a world that is more sonically diverse?</p>
+
+            <p>Together, we can break the sonic color line and redefine the sound of the American voice.</p>
 
             <ul className="cta stack">
-              <li><Link className="button primary" to="/start-your-stand/" state={{ modal: true }}>Start your stand</Link></li>
+              <li className={home.primary}><Link className="button primary" to="/start-your-stand/" state={{ modal: true }}>Stand with us</Link></li>
               <li><Link className="button secondary" to="/what-is-the-sonic-color-line/">What is the sonic color line</Link></li>
             </ul>
           </div>
 
-          <div className={home.lower}>
-            <div className={home.stand}>
-              <p>Who's taking the stand</p>
-              <ul>
-                <li>pandora</li>
-                <li>siriusxm</li>
-                <li>sticher</li>
-              </ul>
-            </div>
-          </div>
+
 
         </div>
 
@@ -70,24 +65,33 @@ const IndexPage = (props) => (
 
 
     <div className={home.wrapperLower}>
-      <section className={`centered ${home.firstCol}`}>
-        <p>Eros himenaeos id porttitor magnis primis ridiculus purus amet accumsan eget mauris bibendum, netus nascetur sagittis felis ipsum sodales est consectetur laoreet nisl lacus. Pellentesque pulvinar primis quis purus tristique venenatis ultricies euismod facilisi, netus habitasse libero sociis a lacinia cursus vehicula dignissim, mollis nunc vitae potenti lacus convallis donec consectetur. Tortor condimentum sem penatibus vulputate massa ac congue orci facilisi, consequat purus quam parturient habitant maecenas pretium felis, conubia lectus aenean pellentesque sociosqu amet mattis donec.</p>
 
-        <p><Link className="button primary" to="/start-your-stand/">Start your stand</Link></p>
-      </section>
-      <section className={home.secondCol}>
-        <ol>
-          <li>list 1</li>
-          <li>list 2</li>
-          <li>list 3</li>
-          <li>list 4</li>
-          <li>list 5</li>
-          <li>list 6</li>
-          <li>list 7</li>
-          <li>list 8</li>
-          <li>list 9</li>
-          <li>list 10</li>
-        </ol>
+      <section className={home.column}>
+        <dl className={home.keyValue}>
+          <dt>Pledge your name and your organization to the following actions today</dt>
+          <dd>
+            <ol>
+              <li>Make a specific, measurable, and public commitment to casting Black voices.</li>
+              <li>Diversify talent rosters, making sure that BIPOC represent at least 50%.</li>
+              <li>Mandate that vendors meet diversity and inclusion benchmarks.</li>
+            </ol>
+          </dd>
+        </dl>
+
+        <dl className={home.keyValue}>
+          <dt>Stand For Sonic Diversity Best Practices</dt>
+          <dd>
+            <ul>
+              <li>Refuse to support “blackvoice” casting, where white voice actors are cast in Black roles.</li>
+              <li>Never direct Black voice talent to sound “more black” or “less black.”</li>
+              <li>Diversify voices cast for the “general market,” rather than defaulting to the use of a white voice</li>
+              <li>Audit casting practices on a regular basis to ensure adherence to diverse casting practices.</li>
+              <li>Extend DEI efforts to all decision makers regarding voice casting and scripting.</li>
+              <li>Establish and engage a diversity review panel to identify stereotypes in creative work and vet sensitive work.</li>
+              <li>Engage professionals who can work with your teams to encourage active listening, acknowledging the sonic color lines we draw in our lives, our work, and our communities.</li>
+            </ul>
+          </dd>
+        </dl>
       </section>
 
       <footer className={home.footer}>
