@@ -9,7 +9,22 @@
 }
 
 .key-value {
-  @include keyvalue(33%)
+  @include keyvalue(33%);
+  dt {
+    margin-top: 3rem;
+    color: $secondary;
+    font-family: $fancyfont;
+    font-size: 2rem;
+    padding: 1rem 0 0 0;
+    line-height: $lineheightheader;
+  }
+  dd {
+    margin-top: 3rem;
+  }
+}
+
+.content {
+  padding: 3rem 4rem;
 }
 
 .footer {
