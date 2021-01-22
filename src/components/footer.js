@@ -29,11 +29,15 @@ export default function Footer() {
 
 
         <div className={footer.footer}>
-          <h3>Black Voices Matter.</h3>
-          <Link to="/" className={footer.logoLink} >
-            <Img fluid={data.standlogo.childImageSharp.fluid} className={footer.logo} alt={data.site.siteMetadata.title}  />
-          </Link>
-          <h4>An initiative launched by</h4>
+          <div className={footer.container}>
+            <div className={footer.firstCol}><h3>Black Voices Matter.</h3></div>
+            <div className={footer.secondCol}>
+              <Link to="/" className={footer.logoLink} >
+                <Img fluid={data.standlogo.childImageSharp.fluid} className={footer.logo} alt={data.site.siteMetadata.title}  />
+              </Link>
+              <p className={footer.launched}>An initiative launched by <img src="/img/lgo-sr.svg" alt="Studio Resonate" /></p>
+            </div>
+          </div>
 
 
           {/* <div className={footer.signatories}>

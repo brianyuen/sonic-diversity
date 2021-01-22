@@ -1,9 +1,37 @@
+@import 'vars';
+
 .footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: center;
+    h3 {
+      color: $light;
+      font-size: 1.8rem;
+      padding: 1.6rem 1.4rem 0 0;
+    }
+  }
 }
 
 .logo {
   display: block;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 300px;
+}
+
+.secondCol {
+  width: 400px;
+}
+
+.launched {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  img {
+    margin-left: 10px;
+    width: 120px;
+  }
 }
