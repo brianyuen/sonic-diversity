@@ -5,6 +5,8 @@ import Img from 'gatsby-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Modal from "../components/standwithus"
+
 
 import home from '../scss/home.module.scss'
 
@@ -40,6 +42,7 @@ const IndexPage = (props) => (
       <section className={home.secondCol}>
         <div className={home.secondColWrapper}>
           <div className={home.upper}>
+            <Modal />
             <h1>Lines have been drawn that perpetuate racism in every industry.</h1>
             <h2>Some of these lines can be seen. Others can be heard.</h2>
 
