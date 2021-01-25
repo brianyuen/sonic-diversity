@@ -5,6 +5,7 @@
   @include twoCol;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  min-height: 700px;
   grid-template-areas: 'firstCol secondCol';
   .first-col {
     grid-area: firstCol;
@@ -100,6 +101,7 @@
     margin: 0.6rem 0 2rem 0;
     line-height: 120%;
     padding-right: 5rem;
+    color: darken($white,20%);
   }
   ul {
     margin-top: 2rem;

@@ -34,7 +34,6 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title={props.data.site.siteMetadata.title} />
     <Helmet bodyAttributes={{id: 'home'}}  />
-
     <div className={home.wrapper}>
       <section className={`centered ${home.firstCol}`}>
         <div className={home.logoContainer}>
