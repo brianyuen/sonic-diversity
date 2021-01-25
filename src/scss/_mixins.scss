@@ -43,17 +43,17 @@
       counter-increment: numeric-counter;
       margin-bottom: 1rem;
       position: relative;
-      padding: 0.4rem 0 0 1.6rem;
+      padding: 0.4rem 0 0 1.8rem;
       &::before {
         content: counter(numeric-counter);
         font-weight: bold;
         font-size: 2rem;
-        // font-family: 'Abril Fatface', serif;
+        font-family: $fancyfont;
         color: $primary;
         line-height: 1;
         position: absolute;
         left: 0;
-        top: 0.4rem;
+        top: 0.6rem;
       }
     }
   }
