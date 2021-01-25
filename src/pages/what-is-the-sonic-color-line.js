@@ -27,7 +27,7 @@ const SinglePage = () => (
     <SEO title="What is The Sonic Color Line" />
     <Helmet bodyAttributes={{id: 'single'}}  />
 
-    <div className={single.wrapper}>
+    <div className={single.wrapper} id="content">
       <Header />
 
       <div className={single.content}>

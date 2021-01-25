@@ -5,17 +5,19 @@ import MicroModal from "micromodal"
 
 import header from '../scss/header.module.scss'
 
+
 let last_known_scroll_position = 0;
 let ticking = false;
 
 function ickySticky() {
-  if (last_known_scroll_position > 400){
-    document.querySelector('header').classList.add('sticky');
-    // document.querySelector('header').setAttribute("style", "position:fixed; width: 100%; max-width: inherit;");
-  }
-  else {
-    document.querySelector('header').classList.remove('sticky');
-    // document.querySelector('header').removeAttribute("style");
+  const content = document.querySelector('#content');
+  if (content != null) {
+    if (last_known_scroll_position > 200){
+      document.querySelector('#content').classList.add('sticky');
+    }
+    else {
+      document.querySelector('#content').classList.remove('sticky');
+    }
   }
 }
 
