@@ -75,28 +75,28 @@ const IndexPage = (props) => (
     <div className={home.wrapperLower}>
 
       <section className={home.column}>
-        <dl className={home.keyValue}>
+        <dl className={home.keyValue} data-sal="fade" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">
           <dt>Pledge your name and your organization to the following actions today</dt>
           <dd>
             <ol>
-              <li>Make a specific, measurable, and public commitment to casting Black voices.</li>
-              <li>Diversify talent rosters, making sure that BIPOC represent at least 50%.</li>
-              <li>Mandate that vendors meet diversity and inclusion benchmarks.</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Make a specific, measurable, and public commitment to casting Black voices.</li>
+              <li data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease" data-sal-duration="1000">Diversify talent rosters, making sure that BIPOC represent at least 50%.</li>
+              <li data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease" data-sal-duration="1000">Mandate that vendors meet diversity and inclusion benchmarks.</li>
             </ol>
           </dd>
         </dl>
 
-        <dl className={home.keyValue}>
+        <dl className={home.keyValue} data-sal="fade" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">
           <dt>Stand For Sonic Diversity Best Practices</dt>
           <dd>
             <ul>
-              <li>Refuse to support “blackvoice” casting, where white voice actors are cast in Black roles.</li>
-              <li>Never direct Black voice talent to sound “more black” or “less black.”</li>
-              <li>Diversify voices cast for the “general market,” rather than defaulting to the use of a white voice</li>
-              <li>Audit casting practices on a regular basis to ensure adherence to diverse casting practices.</li>
-              <li>Extend DEI efforts to all decision makers regarding voice casting and scripting.</li>
-              <li>Establish and engage a diversity review panel to identify stereotypes in creative work and vet sensitive work.</li>
-              <li>Engage professionals who can work with your teams to encourage active listening, acknowledging the sonic color lines we draw in our lives, our work, and our communities.</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Refuse to support “blackvoice” casting, where white voice actors are cast in Black roles.</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Never direct Black voice talent to sound “more black” or “less black.”</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Diversify voices cast for the “general market,” rather than defaulting to the use of a white voice</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Audit casting practices on a regular basis to ensure adherence to diverse casting practices.</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Extend DEI efforts to all decision makers regarding voice casting and scripting.</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Establish and engage a diversity review panel to identify stereotypes in creative work and vet sensitive work.</li>
+              <li data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="1000">Engage professionals who can work with your teams to encourage active listening, acknowledging the sonic color lines we draw in our lives, our work, and our communities.</li>
             </ul>
           </dd>
         </dl>
