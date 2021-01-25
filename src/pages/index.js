@@ -46,11 +46,11 @@ const IndexPage = (props) => (
             <h1>Lines have been drawn that perpetuate racism in every industry.</h1>
             <h2>Some of these lines can be seen. Others can be heard.</h2>
 
-            <p>These are sonic color lines - invisible but pervasive barriers that reward white voices and stereotype voices of color.</p>
+            <p>These are <strong><em>sonic color lines</em></strong> - invisible but pervasive barriers that reward white voices and stereotype voices of color.</p>
 
             <p>Today, we’re taking a stand for sonic diversity. Will you stand with us as we work to open our ears, and the ears of everyone around us, to a world that is more sonically diverse?</p>
 
-            <p>Together, we can break the sonic color line and redefine the sound of the American voice.</p>
+            <p>Together, we can break the <strong><em>sonic color line</em></strong> and redefine the sound of the American voice.</p>
 
             <ul className="cta stack">
               <li className={home.primary}>

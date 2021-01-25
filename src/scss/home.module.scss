@@ -22,7 +22,7 @@
     & > * {
       opacity: 0;
       transform: translateY(-0.6rem);
-      animation: fadein 0.5s ease 0.4s 1 normal forwards;
+      animation: fadein 1.5s ease 0.4s 1 normal forwards;
     }
   }
 }
@@ -38,7 +38,9 @@
     padding: 0 0 3rem 0;
     border-bottom: 1px solid darken($white,80%);
     dt {
-      font-size: 1.6rem;
+      font-size: 2.1rem;
+      font-weight: 700;
+      padding-top: 0.4rem;
     }
   }
   .footer { grid-area: footer; }
@@ -47,7 +49,7 @@
 .logo {
   transform: translateY(-0.6rem);
   opacity: 0;
-  animation: fadein 0.5s ease 0.2s 1 normal forwards;
+  animation: fadein 1.5s ease 0.2s 1 normal forwards;
 }
 
 .stand {
@@ -73,6 +75,17 @@
 
 .upper {
   margin: 0;
+  h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 0.6rem 0 2rem 0;
+    line-height: 120%;
+    padding-right: 5rem;
+  }
   ul {
     margin-top: 2rem;
   }
