@@ -37,7 +37,10 @@ const IndexPage = (props) => (
 
     <div className={home.wrapper}>
       <section className={`centered ${home.firstCol}`}>
-        <Img fluid={props.data.srlogo.childImageSharp.fluid} className={home.logo} alt={props.data.site.siteMetadata.title} />
+        <div className={home.logoContainer}>
+          <Img fluid={props.data.srlogo.childImageSharp.fluid} className={home.logo} alt={props.data.site.siteMetadata.title} />
+          <p className={home.launched}>An initiative launched by <img src="/img/lgo-sr.svg" alt="Studio Resonate" /></p>
+        </div>
       </section>
       <section className={home.secondCol}>
         <div className={home.secondColWrapper}>
