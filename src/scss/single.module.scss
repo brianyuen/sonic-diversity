@@ -2,11 +2,11 @@
 @import 'keyframes';
 
 .wrapper {
-  transform: translateY(-0.6rem);
+  // transform: translateY(-0.6rem);
   opacity: 0;
   animation: fadein 0.5s ease 0.2s 1 normal forwards;
   max-width: $large;
-  margin: 0 auto;
+  margin: -0.5rem auto 0 auto;
 }
 
 .key-value {

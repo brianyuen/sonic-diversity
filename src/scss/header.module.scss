@@ -1,3 +1,5 @@
+@import 'vars';
+
 .nav {
   ul {
     padding: 0;
@@ -18,8 +20,16 @@
   max-width: 13rem;
 }
 
-.back-button {
+.buttons {
   text-align: right;
+  a,button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  button {
+    border: 1px solid $primary;
+    margin-left: 1rem;
+  }
 }
 
 .h1 {

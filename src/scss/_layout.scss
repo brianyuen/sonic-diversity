@@ -20,3 +20,27 @@ section {
   justify-content: center;
 }
 
+header {
+  &.sticky {
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    max-width: inherit;
+    top: 0;
+    .gatsby-image-wrapper {
+      height: 0;
+      padding-bottom: 16%;
+      width: 40%;
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      display: block;
+      height: 8rem;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
