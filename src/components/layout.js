@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 // import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import Modal from "../components/modal"
 
 // import Header from "./header"
 
@@ -15,7 +16,6 @@ const Layout = ({ children }) => {
   //     }
   //   }
   // `)
-
   return (
     <>
     <Helmet>
@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
         <main>{children}</main>
       </div>
+      <Modal />
     </>
   )
 }

@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Modal from "../components/standwithus"
+import MicroModal from "micromodal"
 
 
 import home from '../scss/home.module.scss'
@@ -42,7 +42,7 @@ const IndexPage = (props) => (
       <section className={home.secondCol}>
         <div className={home.secondColWrapper}>
           <div className={home.upper}>
-            <Modal />
+
             <h1>Lines have been drawn that perpetuate racism in every industry.</h1>
             <h2>Some of these lines can be seen. Others can be heard.</h2>
 
@@ -53,7 +53,9 @@ const IndexPage = (props) => (
             <p>Together, we can break the sonic color line and redefine the sound of the American voice.</p>
 
             <ul className="cta stack">
-              <li className={home.primary}><Link className="button primary" to="/start-your-stand/" state={{ modal: true }}>Stand with us</Link></li>
+              <li className={home.primary}>
+                <button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button>
+              </li>
               <li><Link className="button secondary" to="/what-is-the-sonic-color-line/">What is the sonic color line</Link></li>
             </ul>
           </div>

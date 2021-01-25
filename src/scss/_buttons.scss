@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    align-items: center;
     li {
       margin: 1rem 0px;
       &:first-child {
@@ -16,9 +17,9 @@
 
 .button {
   padding: 0.8rem 1rem;
-  margin: 1rem 0;
   cursor: pointer;
   font-family: $fancyfont;
+  border: 0;
   &.primary {
     background-color: $primary;
     outline: 2px solid $primary;
