@@ -28,7 +28,7 @@
     color: $white;
   }
   &.secondary {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.7);
     outline: 2px solid $primary;
     color: $white;
   }

@@ -40,9 +40,9 @@ export default function Header(props) {
     <StaticQuery
       query={graphql`
         query {
-          standlogo: file(relativePath: { eq: "lgo-stand.png" }) {
+          standlogohoriz: file(relativePath: { eq: "lgo-stand-horiz.png" }) {
             childImageSharp {
-              fluid(maxWidth: 400) {
+              fluid(maxWidth: 300) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -63,7 +63,7 @@ export default function Header(props) {
             <ul>
               <li className={header.logo}>
                 <Link to="/" className={header.logoLink} title={data.site.siteMetadata.title} >
-                  <Img fluid={data.standlogo.childImageSharp.fluid} className={header.logoImage} alt={data.site.siteMetadata.title}  />
+                  <Img fluid={data.standlogohoriz.childImageSharp.fluid} fadeIn="true" className={header.logoImage} alt={data.site.siteMetadata.title}  />
                 </Link>
               </li>
               <li className={header.buttons}>
