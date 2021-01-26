@@ -13,10 +13,10 @@ function ickySticky() {
   const content = document.querySelector('#content');
   if (content != null) {
     if (last_known_scroll_position > 200){
-      document.querySelector('#content').classList.add('sticky');
+      content.classList.add('sticky');
     }
     else {
-      document.querySelector('#content').classList.remove('sticky');
+      content.classList.remove('sticky');
     }
   }
 }
