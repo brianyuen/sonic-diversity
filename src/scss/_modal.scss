@@ -16,12 +16,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(6px);
 }
 
 .modal__container {
-  background-color: $white;
+  background-color: $black;
   padding: 30px;
-  max-width: 500px;
+  max-width: 900px;
   max-height: 100vh;
   border-radius: 4px;
   overflow-y: auto;
@@ -46,16 +47,20 @@
 
 .modal__close {
   background: transparent;
+  color: $white;
   border: 0;
 }
 
-.modal__header .modal__close:before { content: "\2715"; }
+.modal__header .modal__close:before {
+  content: "\2715";
+  color: $bodyfont;
+}
 
 .modal__content {
   margin-top: 2rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  color: rgba(0,0,0,.8);
+  color: $bodyfont;
 }
 
 .modal__btn {
