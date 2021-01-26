@@ -172,3 +172,35 @@
  body.animate-off [data-animate|='flip'] {
    transform: none;
  }
+
+
+ #content {
+  &.sticky {
+    padding-top: 8rem;
+    header {
+      transition: all 1s ease;
+      position: fixed;
+      width: 100%;
+      max-width: inherit;
+      animation: stickynav 0.5s ease 0s 1 normal forwards;
+      z-index: 50;
+      .gatsby-image-wrapper {
+        height: 0;
+        padding-bottom: 16%;
+        width: 40%;
+      }
+      &::before {
+        content: "";
+        z-index: -1;
+        width: 100%;
+        display: block;
+        height: 8rem;
+        background: rgb(22,22,25);
+        background: linear-gradient(180deg, rgba(22,22,25,0.9023810207676821) 60%, rgba(22,22,25,0) 99%);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

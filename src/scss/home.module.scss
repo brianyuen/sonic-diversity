@@ -10,14 +10,14 @@
   .first-col {
     grid-area: firstCol;
     // adjusts width of logo
-    padding: 0px 1rem;
+    padding: 0px 1.8rem;
     // weird hack to prevent image from dissappearing when using display:flex when combined with GatsbyImageSharpFluid
     // https://stackoverflow.com/questions/56928410/image-disappears-when-container-becomes-flex-container-gatsby
     & > * {
       flex-grow: 1;
     }
     .logo-container {
-      p {
+      .launched {
         font-size: 0.8rem;
         display: flex;
         align-items: center;
@@ -25,10 +25,10 @@
         margin-top: 1.6rem;
         opacity: 0;
         animation: fadein-opacity 1.5s ease 0.8s 1 normal forwards;
-      }
-      img {
-        height: 30px;
-        margin-left: 8px;
+        img {
+          margin-left: 0.6rem;
+          height: 30px;
+        }
       }
     }
   }
@@ -65,6 +65,7 @@
 .logo {
   transform: translateY(-0.6rem);
   opacity: 0;
+  margin: 0;
   animation: fadein 1.5s ease 0.2s 1 normal forwards;
 }
 
