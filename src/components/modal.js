@@ -15,14 +15,14 @@ export default function Modal() {
           <main className="modal__content" id="standwithus-content">
             <div className={modal.content}>
 
-              <div className={modal.firstCol}>
+              <div className={`${modal.firstCol} centered`}>
                 <h2>Stand with us</h2>
                 <p>The sonic color line wasn’t drawn overnight. Breaking it requires us to retrain the way we listen, to diversify the sonic spaces we inhabit, and to change the creative choices we’re making that serve to perpetuate systemically racist sonic structures. We can’t do it alone, but together, we can make a difference.</p>
 
                 <p>Take that first step. Stand with us for sonic diversity.</p>
               </div>
 
-              <div className={modal.secondCol}>
+              <div className={`${modal.secondCol} centered`}>
                 {/* Marketo form */}
                 <form id="mktoForm_1558"></form>
 
