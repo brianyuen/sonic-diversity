@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
+import MicroModal from "micromodal"
 
 import footer from '../scss/footer.module.scss'
 
@@ -12,7 +13,17 @@ export default function Footer() {
           standlogo: file(relativePath: { eq: "lgo-stand.png" }) {
             childImageSharp {
               fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+              }
+            }
+          }
+          allFile(filter: {relativeDirectory: {eq: "signatories"}}) {
+            edges {
+              node {
+                publicURL
+                name
+                id
+                extension
               }
             }
           }
@@ -40,14 +51,27 @@ export default function Footer() {
           </div>
 
 
-          {/* <div className={footer.signatories}>
-            <p>Signatories</p>
-            <ul>
-              <li>pandora</li>
-              <li>siriusxm</li>
-              <li>sticher</li>
+          {/* {data.allFile.edges.map(edge =>
+            <img src={edge.node.publicURL} alt={edge.node.name} />
+          )} */}
+
+          {/* {data.allFile.edges.map(node =>
+            <img
+              key={node.id}
+              alt={node.name}
+              src={node.publicURL}
+            />
+          )} */}
+
+            <ul className={footer.signatoriesList}>
+              <li><p>Signatories</p></li>
+              <li><img className={footer.signatoriesLogos} src={'/img/signatories-pandora.svg'} alt="Pandora" /></li>
+              <li><img className={footer.signatoriesLogos} src="/img/signatories-siriusxm.svg" alt="SiriusXM" /></li>
+              <li><img className={footer.signatoriesLogos} src="/img/signatories-stitcher.svg" alt="Stitcher" /></li>
+              <li><img className={footer.signatoriesLogos} src="/img/signatories-soundcloud.svg" alt="SoundCloud" /></li>
+              <li><button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button></li>
             </ul>
-          </div> */}
+
 
         </div>
 

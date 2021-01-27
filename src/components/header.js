@@ -43,7 +43,7 @@ export default function Header(props) {
           standlogohoriz: file(relativePath: { eq: "lgo-stand-horiz.png" }) {
             childImageSharp {
               fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }
@@ -63,7 +63,7 @@ export default function Header(props) {
             <ul>
               <li className={header.logo}>
                 <Link to="/" className={header.logoLink} title={data.site.siteMetadata.title} >
-                  <Img fluid={data.standlogohoriz.childImageSharp.fluid} fadeIn="true" className={header.logoImage} alt={data.site.siteMetadata.title}  />
+                  <Img fluid={data.standlogohoriz.childImageSharp.fluid} className={header.logoImage} alt={data.site.siteMetadata.title}  />
                 </Link>
               </li>
               <li className={header.buttons}>

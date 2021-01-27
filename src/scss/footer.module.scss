@@ -3,6 +3,7 @@
 .footer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding: 2rem 0;
   width: 100%;
   .container {
@@ -35,3 +36,60 @@
     width: 120px;
   }
 }
+
+.signatoriesList {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  & > * {
+    flex-grow: 1;
+  }
+  p {
+    font-size: 0.95rem;
+    margin: 0 2rem 0 0;
+    border-right: 1px solid $light;
+  }
+  button {
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.signatoriesLogos {
+  padding: 0;
+  fill: $white;
+}
+
+  // .signatoriesList {
+  //   list-style-type: none;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin: 0;
+  //   padding: 0;
+  //   li {
+  //     p {
+  //       padding: 0 2rem 0 0;
+  //       font-size: 0.95rem;
+  //       margin: 0;
+  //       border-right: 1px solid $light;
+  //     }
+  //     &:first-child {
+  //       display: flex;
+  //     }
+  //   }
+  //   button {
+  //     margin-left: 2rem;
+  //     padding: 0.5rem 1rem;
+  //   }
+  // }
+  // .signatoriesLogos {
+  //   margin: 0;
+  //   list-style-type: none;
+  //   display: flex;
+  //   & > * {
+  //     flex-grow: 1;
+  //   }
+  // }
