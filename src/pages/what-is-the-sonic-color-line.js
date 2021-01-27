@@ -54,11 +54,12 @@ const SinglePage = () => (
       </div>
 
 
-      <footer className={single.footer}>
-        <Footer />
-      </footer>
-
     </div>
+
+    <footer className={single.footer}>
+      <Footer />
+    </footer>
+
   </Layout>
 )
 
