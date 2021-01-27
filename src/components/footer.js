@@ -42,6 +42,8 @@ export default function Footer() {
 
 
         <div className={footer.footer} data-animate="fade" data-animate-delay="300">
+
+          {/* logo */}
           <div className={footer.container}>
             <div className={footer.firstCol}><h3>Black Voices Matter.</h3></div>
             <div className={footer.secondCol}>
@@ -52,24 +54,14 @@ export default function Footer() {
             </div>
           </div>
 
-
+          {/* signatories */}
           <ul className={footer.signatoriesList}>
             <li><p>Signatories</p></li>
             {data.allFile.edges.map(edge => {
-              return <li><img className={`${edge.node.name} ${footer.signatoriesLogos}`} src={edge.node.publicURL} alt={edge.node.name} /></li>
+              return <li key={edge.node.id}><img className={`${edge.node.name} ${footer.signatoriesLogos}`} src={edge.node.publicURL} alt={edge.node.name} /></li>
             })}
             <li><button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button></li>
           </ul>
-
-
-            {/* <ul className={footer.signatoriesList}>
-              <li><p>Signatories</p></li>
-              <li><img className={footer.signatoriesLogos} src={'/img/signatories-pandora.svg'} alt="Pandora" /></li>
-              <li><img className={footer.signatoriesLogos} src="/img/signatories-siriusxm.svg" alt="SiriusXM" /></li>
-              <li><img className={footer.signatoriesLogos} src="/img/signatories-stitcher.svg" alt="Stitcher" /></li>
-              <li><img className={footer.signatoriesLogos} src="/img/signatories-soundcloud.svg" alt="SoundCloud" /></li>
-              <li><button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button></li>
-            </ul> */}
 
 
         </div>
