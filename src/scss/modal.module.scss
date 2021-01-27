@@ -1,3 +1,27 @@
+@import 'vars';
+
 .modal {
   margin: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0em 1em;
+  grid-template-areas:
+    "firstCol secondCol";
+}
+
+.firstCol {
+  grid-area: firstCol;
+  padding: 2rem 3rem;
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+.secondCol {
+  grid-area: secondCol;
+  background-color: $primary;
 }

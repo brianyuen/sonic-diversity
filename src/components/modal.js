@@ -10,39 +10,24 @@ export default function Modal() {
 
     <div className={`${modal.modal} micromodal-slide`} id="standwithus" aria-hidden="true">
       <div className="modal__overlay" tabIndex="-1" data-micromodal-close>
-        <div
-          className="modal__container"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="standwithus-title"
-        >
-          <header className="modal__header">
-            <h2 className="modal__title" id="standwithus-title">
-              Micromodal
-            </h2>
-            <button
-              className="modal__close"
-              aria-label="Close modal"
-              data-micromodal-close
-            />
-          </header>
+        <div className="modal__container" role="dialog" aria-modal="true" aria-labelledby="standwithus-title" >
+
           <main className="modal__content" id="standwithus-content">
-            <p>
-              Try hitting the <code>tab</code> key and notice how the focus
-              stays within the modal itself. Also, <code>esc</code> to close
-              modal.
-            </p>
+            <div className={modal.content}>
+              <div className={modal.firstCol}>
+                <h2>Stand with us</h2>
+                <p>The sonic color line wasn’t drawn overnight. Breaking it requires us to retrain the way we listen, to diversify the sonic spaces we inhabit, and to change the creative choices we’re making that serve to perpetuate systemically racist sonic structures. We can’t do it alone, but together, we can make a difference.</p>
+
+                <p>Take that first step. Stand with us for sonic diversity.</p>
+              </div>
+
+              <div className={modal.secondCol}>
+              Dui elit faucibus mauris amet tellus imperdiet, nibh nunc sociosqu pretium lacinia dictumst, ligula velit iaculis tempor augue. Ante lectus ut leo metus sodales placerat sem nisi sociis condimentum etiam nec dolor felis, commodo nisl cum sit eu dapibus elementum pretium malesuada turpis auctor feugiat tempus.
+              </div>
+            </div>
           </main>
-          <footer className="modal__footer">
-            <button className="modal__btn modal__btn-primary">Continue</button>
-            <button
-              className="modal__btn"
-              data-micromodal-close
-              aria-label="Close this dialog window"
-            >
-              Close
-            </button>
-          </footer>
+          <button className="modal__close" aria-label="Close modal" data-micromodal-close />
+
         </div>
       </div>
     </div>
