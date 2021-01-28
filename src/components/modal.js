@@ -27,7 +27,12 @@ export default function Modal() {
 
               <div className={`${modal.secondCol} centered`}>
                 {/* Marketo form */}
-                <form id="mktoForm_1558"></form>
+                <form id="mktoForm_1558">
+                  <div className='formContent'>
+                    <h2>Stand with us</h2>
+                    <p>The sonic color line wasn’t drawn overnight. Breaking it requires us to retrain the way we listen, to diversify the sonic spaces we inhabit, and to change the creative choices we’re making that serve to perpetuate systemically racist sonic structures. We can’t do it alone, but together, we can make a difference.</p>
+                  </div>
+                </form>
                 <div id="confirmform" style={{visibility:'hidden',display: 'none'}}>
                   <h2>Thank you for taking the stand.</h2>
                   <p>We will follow up shortly regarding this matter.</p>

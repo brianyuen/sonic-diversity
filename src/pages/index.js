@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import MicroModal from "micromodal"
+// import MicroModal from "micromodal"
 
 
 import home from '../scss/home.module.scss'
@@ -56,7 +56,8 @@ const IndexPage = (props) => (
 
             <ul className="cta stack">
               <li className={home.primary}>
-                <button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button>
+                {/* <button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button> */}
+                <a className="button primary" href="?lightboxForm=true">Stand with us</a>
               </li>
               <li><Link className="button secondary" to="/what-is-the-sonic-color-line/">What is the sonic color line</Link></li>
             </ul>

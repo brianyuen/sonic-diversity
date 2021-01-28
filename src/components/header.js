@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import MicroModal from "micromodal"
+// import MicroModal from "micromodal"
 
 import header from '../scss/header.module.scss'
 
@@ -70,7 +70,8 @@ export default function Header(props) {
               </li>
               <li className={header.buttons}>
                 <Link to="/" title={data.site.siteMetadata.title} className="button secondary">Back</Link>
-                <button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button>
+                {/* <button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button> */}
+                <a className="button primary" href="?lightboxForm=true">Stand with us</a>
               </li>
             </ul>
           </nav>

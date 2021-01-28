@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import MicroModal from "micromodal"
+// import MicroModal from "micromodal"
 
 import footer from '../scss/footer.module.scss'
 
@@ -60,7 +60,10 @@ export default function Footer() {
             {data.allFile.edges.map(edge => {
               return <li key={edge.node.id}><img className={`${edge.node.name} ${footer.signatoriesLogos}`} src={edge.node.publicURL} alt={edge.node.name} /></li>
             })}
-            <li><button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button></li>
+            <li>
+              {/* <button className="button primary" onClick={() => MicroModal.show("standwithus")}>Stand with us</button> */}
+              <a className="button primary" href="?lightboxForm=true">Stand with us</a>
+            </li>
           </ul>
 
 
