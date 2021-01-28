@@ -4,7 +4,10 @@ import modal from '../scss/modal.module.scss'
 
 
 export default function Modal() {
-  MicroModal.init();
+  if (typeof window !== 'undefined') {
+    // it's safe to use window now
+    MicroModal.init();
+  }
   return (
     <>
 

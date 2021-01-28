@@ -5,34 +5,36 @@ import MicroModal from "micromodal"
 
 import header from '../scss/header.module.scss'
 
+if (typeof window !== 'undefined') {
+  // it's safe to use window now
+  let last_known_scroll_position = 0;
+  let ticking = false;
 
-let last_known_scroll_position = 0;
-let ticking = false;
-
-function ickySticky() {
-  const content = document.querySelector('#content');
-  if (content != null) {
-    if (last_known_scroll_position > 200){
-      content.classList.add('sticky');
-    }
-    else {
-      content.classList.remove('sticky');
+  function ickySticky() {
+    const content = document.querySelector('#content');
+    if (content != null) {
+      if (last_known_scroll_position > 200){
+        content.classList.add('sticky');
+      }
+      else {
+        content.classList.remove('sticky');
+      }
     }
   }
+
+  document.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        ickySticky(last_known_scroll_position);
+        ticking = false;
+      });
+
+      ticking = true;
+    }
+  });
 }
-
-document.addEventListener('scroll', function(e) {
-  last_known_scroll_position = window.scrollY;
-
-  if (!ticking) {
-    window.requestAnimationFrame(function() {
-      ickySticky(last_known_scroll_position);
-      ticking = false;
-    });
-
-    ticking = true;
-  }
-});
 
 
 export default function Header(props) {

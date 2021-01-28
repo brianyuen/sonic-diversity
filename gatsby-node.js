@@ -6,3 +6,17 @@
 
 // You can delete this file if you're not using it
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /micromodal/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
