@@ -25,6 +25,10 @@ export default function Modal() {
               <div className={`${modal.secondCol} centered`}>
                 {/* Marketo form */}
                 <form id="mktoForm_1558"></form>
+                <div id="confirmform" style={{visibility:'hidden',display: 'none'}}>
+                  <h2>Thank you for taking the stand.</h2>
+                  <p>We will follow up shortly regarding this matter.</p>
+                </div>
 
               </div>
             </div>

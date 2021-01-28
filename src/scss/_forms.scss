@@ -28,7 +28,7 @@
     transition: all 0.5s ease;
     font-weight: bold;
     &:focus {
-      background-color: lighten($primary,25%) !important;
+      background-color: lighten($primary,45%) !important;
     }
   }
   .mktoGutter,
